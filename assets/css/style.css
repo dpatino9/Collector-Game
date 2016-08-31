@@ -1,0 +1,72 @@
+/*font-family [local]: 'NarutoNinja';*/
+@font-face { font-family: NarutoNinja; src: url('../fonts/njnaruto.ttf'); }
+
+p {
+	/*font-family: 'Cherry+Swash';*/
+	font-family: 'Cherry Swash', cursive;
+	font-size: 20px;
+}
+
+h3 {
+	font-family: 'Cherry Swash', cursive;
+	font-size: 30px;
+}
+
+h1 {
+	font-size: 100px;
+	font-family: 'NarutoNinja';
+}
+
+h2 {
+	font-size: 50px;
+	font-family: 'NarutoNinja';
+}
+
+body {
+	background-image: url("../images/NarutovsSasuke.jpg");
+	background-size: cover;
+	background-repeat: round;
+	color: #f1f4f9;
+
+
+}
+
+img {
+	height:60px;
+	width:60px;
+	border:2px solid black;
+	border-radius: 10px
+}
+
+img:hover {
+	cursor: pointer;
+	box-shadow: 2px 2px 10px black;
+}
+
+img:active {
+	box-shadow: 1px 1px 5px black;
+}
+
+h1, h2 {
+	
+	color: #ecad33;
+	text-shadow: 5px 5px #22274e;
+}
+
+.underline {
+	text-decoration: underline;
+}
+
+.instructions {
+	display: none;
+
+}
+
+.dropdown:hover {
+	cursor: pointer;
+
+}
+
+.stats p {
+	font-size: 25px;
+}

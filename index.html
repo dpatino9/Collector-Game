@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Crystal Game</title>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<!-- Linking jQuery -->
+	<script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
+
+
+	<!-- Google Fonts -->
+	<link href='https://fonts.googleapis.com/css?family=Josefin+Sans|Lobster' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Acme|Cherry+Swash' rel='stylesheet' type='text/css'>
+
+	<!-- My CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	
+</head>
+
+<body>
+
+<!-- Page Layout -->
+<div class="container">
+
+	<div class="row">
+		<div class="col-md-12 text-center">
+			<h1>Naruto Card Collector!</h1>
+			<h3 class="dropdown">How do I play?</h3>
+			<div class="instructions col-md-8 col-md-offset-2">
+				<p>*You're given a random number at the start of the game. Your goal is to click on the Naruto cards and get your total score to match this number.</p>
+				<p>Clicking on a card will add a set amount of points to your total score.</p>
+				<p>The value of each card is hidden from you until you click on it.</p>
+				<p>You win the game by matching your total score to the random number, you lose the game if your total score goes above the random number.</p>
+				<p>Each time the game starts, the cards will get a new random value.</p>
+			</div>
+		</div>
+	</div>
+	<br><br>
+
+	<div class="row">
+
+		<div class="col-md-6 text-center">
+			<div class="col-md-12">
+				<h2>Match This Number: <span class="numberdisplay"></h2>
+			</div>
+			<div class="col-md-12">
+				<h2>Your Current Number: <span class="guessdisplay">0</span></h2>
+			</div>
+
+			<div class="col-md-12">
+			<br>
+			<br>
+				<div class="col-md-2 col-md-offset-2">
+					<img class="narutocard" src="assets/images/NarutoPunch.gif">
+				</div>
+				<div class="col-md-2">
+					<img class="sasukecard" src="assets/images/Sasuke.gif">
+				</div>
+				<div class="col-md-2">
+					<img class="minatocard" src="assets/images/FourthHokage.gif">
+				</div>
+				<div class="col-md-2">
+					<img class="itachicard" src="assets/images/Itachi.gif">
+				</div>
+			</div>
+
+		</div>
+
+		<div class="col-md-6">
+			<div class="col-md-12 text-center stats">
+
+				<h2 class="underline">Stats</h2>
+				<p>Wins: <span id="winsdisplay">0</span></p>
+				<p>Losses: <span id="lossesdisplay">0</span></p>
+				<p>Current Streak: <span id="currentstreakdisplay">0</span></p>
+				<p>Longest Streak: <span id="longeststreakdisplay">0</span></p>
+			</div>
+		</div>
+	</div>
+
+
+</div>
+<script src="assets/javascript/game.js"></script>
+</body>
+</html>
