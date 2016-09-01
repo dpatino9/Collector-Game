@@ -2,13 +2,14 @@
 @font-face { font-family: NarutoNinja; src: url('../fonts/njnaruto.ttf'); }
 
 p {
-	/*font-family: 'Cherry+Swash';*/
-	font-family: 'Cherry Swash', cursive;
+	/*font-family: 'Fascinate Inline| Sigmar One';*/
+	font-family: 'Sigmar One', cursive;
 	font-size: 20px;
+	color: #ce5826;
 }
 
 h3 {
-	font-family: 'Cherry Swash', cursive;
+	font-family: 'Fascinate Inline', cursive;
 	font-size: 30px;
 }
 
@@ -40,7 +41,7 @@ img {
 
 img:hover {
 	cursor: pointer;
-	box-shadow: 2px 2px 10px black;
+	box-shadow: 2px 2px 10px #e6cd32;
 }
 
 img:active {

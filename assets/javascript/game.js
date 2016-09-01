@@ -7,7 +7,12 @@
 	var sasuke = Math.floor((Math.random() * 12) + 1);
 	var minato = Math.floor((Math.random() * 12) + 1);
 	var itachi = Math.floor((Math.random() * 12) + 1);
-
+	var narsnd = new Audio ("assets/sounds/BelieveIt.mp3");
+	var sassnd = new Audio ("assets/sounds/Madara.mp3");
+	var minsnd = new Audio ("assets/sounds/Greater.mp3");
+	var itacsnd = new Audio ("assets/sounds/Itachi.mp3");
+	var playsnd = new Audio ("assets/sounds/Naruto.mp3");
+	
 	// Setting initial values to 0.
 	var guessTotal = 0;
 	var wins = 0;
@@ -15,28 +20,40 @@
 	var currentStreak = 0;
 	var longestStreak = 0;
 
+	//Volume Control set to quiter background "NarutoThemeSong"
+	window.onload = function() {
+	var	aud = document.getElementById("ThemeSong");
+    aud.volume = 0.2;
+}
+
 	// Displays the number you need to guess on the page.
 	$(".numberdisplay").html(number);
 
 	// On click events for each card.
 	$(".narutocard").click(function() {
+		narsnd.play();
 		update(naruto);
 	});
 
 	$(".sasukecard").click(function() {
+		sassnd.play();
 		update(sasuke);
 	});
 
 	$(".minatocard").click(function() {
+		minsnd.play();
 		update(minato);
 	});
 
 	$(".itachicard").click(function() {
+		itacsnd.play();
 		update(itachi);
 	});
 
 	$(".dropdown").click(function() {
+		playsnd.play();
 		$(".instructions").toggle("slow");
+
 	})
 
 	// The reset function is called when you win or lose a game.
