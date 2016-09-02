@@ -7,7 +7,7 @@
 	var sasuke = Math.floor((Math.random() * 12) + 1);
 	var minato = Math.floor((Math.random() * 12) + 1);
 	var itachi = Math.floor((Math.random() * 12) + 1);
-	var narsnd = new Audio ("assets/sounds/BelieveIt.mp3");
+	var narsnd = new Audio ("assets/sounds/believeit.mp3");
 	var sassnd = new Audio ("assets/sounds/Madara.mp3");
 	var minsnd = new Audio ("assets/sounds/Greater.mp3");
 	var itacsnd = new Audio ("assets/sounds/Itachi.mp3");
